@@ -1,0 +1,271 @@
+Index: trunk/Dicregate/Dicregate/Dicregate2013.vcxproj
+===================================================================
+--- trunk/Dicregate/Dicregate/Dicregate2013.vcxproj	(リビジョン 4846)
++++ trunk/Dicregate/Dicregate/Dicregate2013.vcxproj	(作業コピー)
+@@ -394,7 +394,7 @@
+       </BrowseInformation>
+       <WarningLevel>Level3</WarningLevel>
+       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+     </ClCompile>
+     <ResourceCompile>
+       <AdditionalIncludeDirectories>L:\MSSDK\2003\Include;L:\MSSDK\2003\Include\mfc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+@@ -437,7 +437,7 @@
+       </Command>
+     </PreBuildEvent>
+     <ClCompile>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;NDEBUG;_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -489,7 +489,7 @@
+     <ClCompile>
+       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;NDEBUG;_SHIP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>false</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -555,7 +555,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_FOCUS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -609,7 +609,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_THREAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -663,7 +663,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_MOUSEGESTURE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -717,7 +717,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_SHORTCUT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -771,7 +771,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_AUTOCOMPLETE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -825,7 +825,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_BROWSER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -879,7 +879,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_RESOURCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -933,7 +933,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_DRAGDROP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -987,7 +987,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_IDLING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1041,7 +1041,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1095,7 +1095,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1149,7 +1149,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1203,7 +1203,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1257,7 +1257,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1311,7 +1311,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_LEAK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1366,7 +1366,7 @@
+     <ClCompile>
+       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;NDEBUG;_SHIP;_DEBUG_LEAK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>false</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1432,7 +1432,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_SQLITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1486,7 +1486,7 @@
+     </PreBuildEvent>
+     <ClCompile>
+       <Optimization>Disabled</Optimization>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG_CLIPBOARD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>true</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1541,7 +1541,7 @@
+     <ClCompile>
+       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+-      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.108\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)\eb\eb;$(SolutionDir)\eb\eb-4.2.2-win32\win32thread;$(SolutionDir)\eb\eb-4.2.2-win32\portsrc;L:\stlsoft-1.9.118\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>WIN32;NDEBUG;_SHIP;_SHIP_PROFILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <StringPooling>false</StringPooling>
+       <MinimalRebuild>false</MinimalRebuild>
+@@ -1806,24 +1806,50 @@
+     <EmbeddedResource Include="FormMain.resx">
+       <DependentUpon>FormMain.h</DependentUpon>
+       <SubType>Designer</SubType>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug-OnlyDicregate|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug2|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugAutoComplete|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugBrowser|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugClipboard|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugDragDrop|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugFocus|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugIdling|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugLeak|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugMouseGesture|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugRemote|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugResource|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugShortcut|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugSqlite|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugThread|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugWindos|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
+-      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Pure|Win32'">$(IntDir)$(RootNamespace).%(Filename).resources</LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug-OnlyDicregate|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug2|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugAutoComplete|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugBrowser|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugClipboard|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugDragDrop|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugFocus|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugIdling|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugLeak|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugMouseGesture|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugRemote|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugResource|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugShortcut|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugSqlite|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugThread|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='DebugWindos|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Pure|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='ShipProfile|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='ShipLeak|Win32'">
++      </LogicalName>
++      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Ship|Win32'">
++      </LogicalName>
+     </EmbeddedResource>
+     <EmbeddedResource Include="FormWaitDownload.resx">
+       <DependentUpon>FormWaitDownload.h</DependentUpon>
