@@ -18,7 +18,9 @@ int main(int argc, char *argv[])
     QDateTime outdt1 = QDateTime::fromMSecsSinceEpoch(dt1.toMSecsSinceEpoch());
     QDateTime outdt2 = QDateTime::fromMSecsSinceEpoch(dt2.toMSecsSinceEpoch());
 
-    qDebug() << outdt1.currentMSecsSinceEpoch();
+	qDebug() << outdt1;
+	qDebug() << outdt2;
+	qDebug() << outdt1.currentMSecsSinceEpoch();
     qDebug() << outdt2.currentMSecsSinceEpoch();
 
     qDebug() << (outdt1==dt1);

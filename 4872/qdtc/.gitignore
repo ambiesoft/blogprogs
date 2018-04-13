@@ -1,0 +1,12 @@
+.qmake.stash
+.vs/
+Makefile
+Makefile.Debug
+Makefile.Release
+debug/
+qdtc.sln
+qdtc.vcxproj
+qdtc.vcxproj.filters
+release/
+x64/
+
