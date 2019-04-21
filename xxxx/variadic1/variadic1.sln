@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{869E8B98-F914-4DEB-9874-5302AF1EAD34}") = "variadic1", "variadic1\stdfunctiontest.vcxproj", "{173CD15D-7BFB-441B-B1D4-C17FA2D9F189}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EF85819-6507-426F-A2CA-797651C31421}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4EF85819-6507-426F-A2CA-797651C31421}.Debug|Win32.Build.0 = Debug|Win32
+		{4EF85819-6507-426F-A2CA-797651C31421}.Release|Win32.ActiveCfg = Release|Win32
+		{4EF85819-6507-426F-A2CA-797651C31421}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
