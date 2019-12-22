@@ -1,5 +1,8 @@
 .vs/
+Debug/
 x64/
+*.sdf
+*.suo
 *.user
 
 # /4527/ConsoleTest2010/

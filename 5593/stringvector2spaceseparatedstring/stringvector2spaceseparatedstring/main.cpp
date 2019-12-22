@@ -12,7 +12,7 @@ using namespace std;
 void osstest()
 {
 	ostringstream oss;
-	oss << 1 << "\n";
+	oss << 1 ;
 	oss << 10 << "\n";
 	oss << 100 << "\n";
 
@@ -38,6 +38,24 @@ void ositest()
 	}
 }
 
+void copytest()
+{
+	{
+		vector<int> vi = { 1, 2, 3 };
+		vector<int> vi2(3);
+
+		copy(vi.begin(), vi.end(),
+			vi2.begin());
+	}
+	{
+		vector<string> vs = { "a", "b", "c" };
+		vector<string> vs2(3);
+
+		copy(vs.begin(), vs.end(),
+			vs2.begin());
+	}
+
+}
 
 int main()
 {
@@ -45,12 +63,14 @@ int main()
 
 	osstest();
 	ositest();
+	copytest();
+
 
 	vector<string> vs = { "aaa", "bbb", "ccc" };
 
 	ostringstream oss;
 	std::copy(vs.begin(), vs.end(),
-		ostream_iterator<string>(oss, ","));
+		ostream_iterator<string>(oss, " "));
 
 	cout << oss.str() << endl;
 }
