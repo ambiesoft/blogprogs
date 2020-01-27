@@ -1,7 +1,6 @@
 #include <iostream>
 
 #if defined(__GNUC__)
-    // Some variables must be shared so that CallWndProc hooks can access them
     #define shareattr __attribute__((section ("shared"), shared))
 #else
     #pragma section("shared",shared)
