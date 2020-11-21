@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<pre id="p">aaa</pre>
+<script>
+var now = new Date();
+var out ="";
+
+var ts = Math.round((new Date()).getTime() / 1000);
+out+="UnixTimeStamp:" + ts + "\n";
+out += "now.toDateString():" + now.toDateString() + "\n";
+out += "now.toISOString():" + now.toISOString() + "\n";
+out += "now.toLocaleDateString():"+now.toLocaleDateString()+"\n";
+out += "now.valueOf():" + now.valueOf() + "\n";
+document.getElementById("p").innerText=out;
+        
+</script>
+</body>
+</html>

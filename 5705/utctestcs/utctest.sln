@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "utctest", "utctest.csproj", "{0EB60211-F19D-4C7B-A863-DA6617010FF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EB60211-F19D-4C7B-A863-DA6617010FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB60211-F19D-4C7B-A863-DA6617010FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB60211-F19D-4C7B-A863-DA6617010FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB60211-F19D-4C7B-A863-DA6617010FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {647EBD55-00FD-44B8-B534-683D281BDABD}
+	EndGlobalSection
+EndGlobal
