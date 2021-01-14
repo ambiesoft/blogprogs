@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非同期処理は簡単</title>
+</head>
+<body>
+    
+<script>
+console.log('start');
+
+setTimeout(() => console.log('setTimeout'), 0);
+
+(async () => { await 0; console.log('async'); })()    
+
+function promiseFunc()
+{
+    return new Promise((r) => { console.log('r'); r();})
+}
+promiseFunc().then(()=> console.log('promise'))
+
+Promise.resolve().then( () => console.log('resolve'))
+
+promiseFunc().then(()=> console.log('promise2'))
+
+console.log('end')
+</script>
+
+
+</body>
+</html>
