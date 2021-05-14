@@ -1,0 +1,58 @@
+#!/bin/bash
+
+if ./mytrues ; then
+  echo "./mytrues is true (${LINENO})"
+else
+  echo "./mytrues is false (${LINENO})"
+fi
+
+if ./myfalses ; then
+  echo "./myfalses is true (${LINENO})"
+else
+  echo "./myfalses is false (${LINENO})"
+fi
+
+echo '===[==='
+
+if [ ./mytrues ]; then
+  echo "[ ./mytrues ] is true (${LINENO})"
+else
+  echo "[ ./mytrues ] is false (${LINENO})"
+fi
+
+if [ ./myfalses ]; then
+  echo "[ ./myfalses ] is true (${LINENO})"
+else
+  echo "[ ./myfalses ] is false (${LINENO})"
+fi
+
+
+echo '===[[==='
+
+if [[ ./mytrues ]]; then
+  echo "[[ ./mytrues ]] is true (${LINENO})"
+else
+  echo "[[ ./mytrues ]] is false (${LINENO})"
+fi
+
+if [[ ./myfalses ]]; then
+  echo "[[ ./myfalses ]] is true (${LINENO})"
+else
+  echo "[[ ./myfalses ]] is false (${LINENO})"
+fi
+
+
+echo '===Subshell==='
+
+if [ $(./mytrues) ]; then
+  echo "[ \$(./mytrues) ] is true  (${LINENO})"
+else
+  echo "[ \$(./mytrues) ] is false (${LINENO})"
+fi
+
+if [ $(./myfalses) ]; then
+  echo "[ \$(./myfalses) ] is true  (${LINENO})"
+else
+  echo "[ \$(./myfalses) ] is false (${LINENO})"
+fi
+

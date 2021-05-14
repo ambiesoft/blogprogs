@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Error, 1 is not a command
+#if 1 ; then
+#  echo "if 1 (${LINENO})" is true
+#else
+#  echo "if 1 (${LINENO})" is false
+#fi
+
+# Error, x is not a command
+#if x ; then
+#  echo "if x (${LINENO})" is true
+#else
+#  echo "if x (${LINENO})" is false
+#fi
+
+# normal command, returns 0 when success, it means true
+if uname ; then
+  echo "uname is true (${LINENO})"  # COMES HERE
+else
+  echo "uname is false (${LINENO})"
+fi
+
+# illegal, returns 1, it means false
+if uname -b; then
+  echo "uname -b is true (${LINENO})"
+else
+  echo "uname -b is false (${LINENO})"  # COMES HERE
+fi
+
+
+# Do with subshell 
+# Bash error $(..) is not a command
+#if $(uname) ; then
+#  echo "uname is true (${LINENO})"
+#else
+#  echo "uname is false (${LINENO})"
+#fi
+
+echo '===Do with subshell==='
+if [ $(uname) ]; then
+  echo "uname is true (${LINENO})"  # COMES HERE
+else
+  echo "uname is false (${LINENO})"
+fi
+
+if [ $(uname -b) ]; then
+  echo "uname -b is true (${LINENO})"
+else
+  echo "uname -b is false (${LINENO})"  # COMES HERE
+fi
+
+echo '===Do with subshell and [[==='
+if [[ $(uname) ]]; then
+  echo "uname is true (${LINENO})"  # COMES HERE
+else
+  echo "uname is false (${LINENO})"
+fi
+
+if [[ $(uname -b) ]]; then
+  echo "uname -b is true (${LINENO})"
+else
+  echo "uname -b is false (${LINENO})"  # COMES HERE
+fi
