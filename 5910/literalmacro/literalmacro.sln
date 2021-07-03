@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "literalmacro", "literalmacro\literalmacro.vcxproj", "{3160C433-0A51-4070-9D38-C5ABB1359E37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Debug|x64.ActiveCfg = Debug|x64
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Debug|x64.Build.0 = Debug|x64
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Debug|x86.ActiveCfg = Debug|Win32
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Debug|x86.Build.0 = Debug|Win32
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Release|x64.ActiveCfg = Release|x64
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Release|x64.Build.0 = Release|x64
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Release|x86.ActiveCfg = Release|Win32
+		{3160C433-0A51-4070-9D38-C5ABB1359E37}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B0BDCBA-72B9-4897-A91E-84F3D90375CB}
+	EndGlobalSection
+EndGlobal
