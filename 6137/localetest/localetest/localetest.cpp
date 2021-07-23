@@ -63,6 +63,39 @@ int main()
     unsigned        threadID;
     unsigned char   str[BUFF_SIZE];
 
+    {
+        double d = 1234.56;
+        std::wcout << "Nolocal " << d << '\n';
+        
+        {
+            std::locale loc("en-US");
+            std::wcout.imbue(loc);
+            std::wcout << loc.name().c_str() << " " << d << '\n';
+        }
+        {
+            std::locale loc("ja-JP");
+            std::wcout.imbue(loc);
+            std::wcout << loc.name().c_str() << " " << d << '\n';
+        }
+        {
+            std::locale loc("de-DE");
+            std::wcout.imbue(loc);
+            std::wcout << loc.name().c_str() << " " << d << '\n';
+        }
+    }
+
+    {
+        std::wcout << "User-preferred locale setting is " << std::locale("").name().c_str() << '\n';
+        // on startup, the global locale is the "C" locale
+        std::wcout << 1000.01 << '\n';
+        // replace the C++ global locale as well as the C locale with the user-preferred locale
+        std::locale::global(std::locale(""));
+        // use the new global locale for future wide character output
+        std::wcout.imbue(std::locale());
+        // output the same number again
+        std::wcout << 1000.01 << '\n';
+    }
+
     long double mon = 123.45; // or std::string mon = "123.45";
     {
         std::stringstream ss;
@@ -138,8 +171,8 @@ int main()
 
     // Create the second thread with a German locale.
     // Our thread function takes an argument of the locale to use.
-    hThread = (HANDLE)_beginthreadex(NULL, 0, &SecondThreadFunc,
-        (void*)"de-DE", 0, &threadID);
+    //hThread = (HANDLE)_beginthreadex(NULL, 0, SecondThreadFunc,
+    //    (void*)"de-DE", 0, &threadID);
 
     if (get_date(str) == 0)
     {
@@ -148,8 +181,8 @@ int main()
     }
 
     // Wait for the created thread to finish.
-    WaitForSingleObject(hThread, INFINITE);
+    // WaitForSingleObject(hThread, INFINITE);
 
     // Destroy the thread object.
-    CloseHandle(hThread);
+    // CloseHandle(hThread);
 }
