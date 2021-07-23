@@ -93,6 +93,7 @@ int main()
         std::cout << mbs << std::endl;
     }
     {
+        std::locale("ja-JP");
         char path[] = "あああ";
         std::locale::global(std::locale(""));
         //struct wchar_codecvt : public std::codecvt<wchar_t, char, std::mbstate_t> {};
