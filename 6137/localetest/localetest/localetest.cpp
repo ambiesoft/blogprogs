@@ -8,6 +8,7 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+
 #define BUFF_SIZE 100
 
 // Retrieve the date in the current
@@ -75,6 +76,29 @@ int main()
         std::wstringstream ss;
         ss.imbue(std::locale("ja_JP.UTF8"));
         ss << u8"あ";
+    }
+
+    {
+        using codecvt_wchar = std::codecvt<wchar_t, char, std::mbstate_t>;
+
+        std::locale loc("");
+        std::wstring_convert<codecvt_wchar> cv(
+            &std::use_facet<codecvt_wchar>(loc));
+
+        std::string message = "あいうえお";
+
+        std::wstring wcs = cv.from_bytes(message);
+        std::string mbs = cv.to_bytes(wcs);
+
+        std::cout << mbs << std::endl;
+    }
+    {
+        char path[] = "あああ";
+        std::locale::global(std::locale(""));
+        //struct wchar_codecvt : public std::codecvt<wchar_t, char, std::mbstate_t> {};
+        //std::wstring_convert<wchar_codecvt> converter;
+        std::wstring_convert<std::codecvt<wchar_t, char, std::mbstate_t>> converter;
+        std::wstring wide_path = converter.from_bytes(path);
     }
     //// ss.precision(2);
     //ss << std::put_money(;
