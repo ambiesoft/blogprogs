@@ -1,8 +1,7 @@
 
 function showwidth() {
     let text =
-        `
-        screen.width=${screen.width}
+        `screen.width=${screen.width}
         screen.height=${screen.height}
         document.documentElement.clientWidth=${document.documentElement.clientWidth}
         document.documentElement.clientheight=${document.documentElement.clientHeight}
