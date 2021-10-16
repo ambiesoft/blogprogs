@@ -21,9 +21,15 @@
     <ClCompile Include="..\..\..\..\lsMisc\CreateSimpleWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\lsMisc\GetLastErrorString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\lsMisc\CreateSimpleWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lsMisc\GetLastErrorString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

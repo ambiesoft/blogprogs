@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\lsMisc\CreateSimpleWindow.cpp" />
+    <ClCompile Include="..\..\..\..\lsMisc\GetLastErrorString.cpp" />
     <ClCompile Include="simplemenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\lsMisc\CreateSimpleWindow.h" />
+    <ClInclude Include="..\..\..\..\lsMisc\GetLastErrorString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
