@@ -13,5 +13,52 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ducimus itaque expedita perferendis voluptatum consectetur sequi eos. Non magni nostrum distinctio quae esse, numquam fuga voluptates similique, deleniti itaque officiis!</p>
     <script src="showwidth.js" type="text/javascript"></script>
+    
+    viewport覚書
+ 2021年9月14日 adminhtml No Comments
+前提知識
+デバイスピクセルとCSSピクセル
+デバイスピクセルはscreen.widthなどで取得できるもので物理的ピクセルを表す。CSSピクセルはwindow.innerWidthなどで取得できるもので、ズーム値によって異なる。
+
+screen.widthよりもエレメントのwidthが小さければ画面に収まることになる。しかしユーザがズーム機能を使って２００％とかにするとそうはならない。ズーム機能はピクセルを広げる機能と考えられるのでCSSピクセルのサイズはズーム値によって異なる。
+
+デバイスピクセルはズームに関わらず常に一定であり、CSSピクセルはデバイスピクセルにズーム率を掛けたものになる（実際は縦横ともにズームされるので平方で掛ける）。
+
+screen.widthはスクリーン全体の幅でデバイスピクセル値なのでブラウザのズーム値では値は変わらないが、window.innerWidthはブラウザウインドウの幅を表しCSSピクセルなのでズーム値によって値が変わる。（ズーム値を１００％以下にしていくとwindow.innerWidthのほうがscreen.widthより大きくなることもある）
+
+viewport
+画面の狭いスマホではviewportと呼ばれる仮想のウインドウにページをレンダリングし、その後ページをひと目で見れるように全体を縮小する。ユーザはスワイプやズームを使って見たいところにフォーカスする。
+
+これはモバイルに最適化されていないサイトをできるだけ見やすいようにする仕組み
+
+visual viewportとlayout viewport
+モバイル端末では画面が小さすぎるので、viewportを２つの概念に分割する。
+visual viewportは画面に表示されているページの一部。ユーザはスクロールやズームで表示内容を変えることができる。layout viewportは全体でvisual viewportはlayout viewportの一部を表示していることになる。
+
+モバイル端末ではlayout viewportの値は800pxから1000pxくらいになっている。モバイル端末の幅は400pxくらいなので実際よりも大きい値になる。デスクトップではブラウザウィンドウのサイズになっている。
+
+
+ 
+CSSの％で指定されている値はlayout viewportに対して適用される。
+モバイル端末のブラウザでは初期表示時は完全にズームアウトされた状態で表示されることが多く、このときは２つのviewportは一致している。
+
+２つのviewportはCSSピクセルで測られ、visual viewportはズームによってサイズが変わる。
+
+document.documentElement.clientWidthはlayout viewportの幅を返す。メタタグのviewportがない限り常にこの値は一定であるが、document.documentElement.clientHeightは端末を回転させて縦横が変わると変わる。
+
+window.innerWidthはvisual viewportの幅を返す。
+
+viewportメタタグ
+viewportメタタグがない場合はサイズ指定なしのエレメントは親のサイズを継承するのでlayout viewportのサイズになる。layout viewportのデフォルトサイズは800px～1000pxだったのでエレメントもそのサイズになり、通常とても小さく表示される。
+
+<meta name="viewport" content="width=320">
+この記述があると、layout viewportの幅が320pxになり、最初の表示のときでもエレメントのサイズは320pxになるので小さく表示されない。
+
+まとめ
+デスクトップブラウザではviewportはブラウザウィンドウの幅と同じなので気にすることはなかった。モバイル端末ができて、どうやって今までのサイトを表示しようか考えたときにlayout viewportという概念で800pxくらいの全体のサイズを決め打ちして表示するようにした。しかしそれだと表示がとても小さくなってしまうので、メタタグviewportができてここでlayout viewportのサイズを指定できるようにした。
+
+参照
+A tale of two viewports — part two
+各種のメタタグでサイズを表示するサイト
 </body>
 </html>
